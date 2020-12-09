@@ -21,11 +21,11 @@ RegisterCommand("staffchat", function(source, args, rawCommand)
 				
 				if xPlayer.getGroup() == 'mod' then
 					xPlayer.showNotification("~r~STAFF-CHAT ~g~Moderator ~s~(".. GetPlayerName(source).. "): " .. nachricht)
-					sendToDiscord("(MODERATOR) " .. name, nachricht)
+					sendToDiscord("(MODERATOR) " .. name, args)
 				end
 				if xPlayer.getGroup() == 'admin' then
 					xPlayer.showNotification("~r~STAFF-CHAT ~r~~h~Admin~h~ ~s~(".. GetPlayerName(source).. "): " .. nachricht)
-					sendToDiscord("(ADMIN) " .. name, nachricht)
+					sendToDiscord("(ADMIN) " .. name, args)
 
 				end
 			end
