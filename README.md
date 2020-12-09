@@ -21,7 +21,7 @@ Just go to main.lua copy the code after line 25 here an example:
 
 ```
 				if xPlayer.getGroup() == 'yourrankhere' then
-					xPlayer.showNotification("~r~STAFF-CHAT ~g~RANK ~s~(".. GetPlayerName(source).. "): " .. nachricht)
+					xPlayer.showNotification("~r~STAFF-CHAT ~g~RANK ~s~(".. GetPlayerName(source).. "): " .. args)
 					sendToDiscord("(RANK) " .. name, nachricht)
 				end
 
